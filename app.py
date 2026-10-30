@@ -10,7 +10,6 @@ st.set_page_config(
 )
 
 
-
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
@@ -19,14 +18,6 @@ hide_streamlit_style = """
     div[data-testid="stToolbar"] {visibility: hidden !important; display: none !important;}
     div[data-testid="manage-app-button"] {display: none !important;}
     footer {visibility: hidden !important;}
-    
-     /* Hides the floating bottom-right Streamlit branding / GitHub badge */
-        .viewerBadge_container__1QSob, 
-        div[data-testid="stToolbar"],
-        #root > div:last-child > div:last-child {
-            display: none !important;
-            visibility: hidden !important;
-        }
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
