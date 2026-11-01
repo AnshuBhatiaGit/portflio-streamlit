@@ -137,7 +137,7 @@ if page == "Home":
         )
 
     with right:
-        photo_path = Path("assets/profile.jpg")
+        photo_path = Path("assets/avatar.jpg")
 
         if photo_path.exists():
             st.image(str(photo_path), use_container_width=True)
